@@ -2,10 +2,7 @@ import axios from "axios";
 
 
 const SERVERS = [
-   "https://bebo-system-backend.vercel.app/v1",
-  "https://bebosystembackend-production.up.railway.app/v1"
-
-
+   "https://bebosystembackend.vercel.app/v1",
 ];
 let currentServer = 0;
 
