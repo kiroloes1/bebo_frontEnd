@@ -5,7 +5,7 @@ import ScrollToTop from "./services/scrollToTop";
 import ProtectedRoute from "./services/protectRoutes";
 import ProtectedAccess from "./services/protectAccess";
 
-import Login from "./pages/auth/login";
+import Login from "./pages/auth/Login";
 import Footer from "./pages/footer";
 
 import ForgetPassword from "./pages/auth/forgetPassword";
