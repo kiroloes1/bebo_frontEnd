@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;700&family=Almarai:wght@300;400;700;800&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;500;600;700&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=El+Messiri:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Markazi+Text:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Naskh+Arabic:wght@400..700&family=Readex+Pro:wght@160..700&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap' rel="stylesheet">
+    
+    <link href="https://fonts.google.com/?query=Tahoma&utm_source=chatgpt.com" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/tahoma" rel="stylesheet">
+
+    <link rel="icon" href="/icon.jpeg">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <title> معرض يوسف للأدويه البيطريه </title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <style>
+      :root {
+        --system-font: "Cairo";
+        --invoice-font: 'Hooz';
+        --primary: #0A2947;
+        --secondary: #8B5E3C;
+        --accent: #8B5E3C;
+        --background: #F3E4C9;
+      }
+
+      /* ==================== Smooth & Thin Scrollbar ==================== */
+      
+  
+      ::-webkit-scrollbar {
+        width: 6px !important; 
+        height: 6px !important; 
+      }
+
+      
+      ::-webkit-scrollbar-track {
+        background: color-mix(in srgb, var(--background) 40%, transparent);
+        border-radius: 10px;
+      }
+
+     
+      ::-webkit-scrollbar-thumb {
+        background: color-mix(in srgb, var(--secondary) 50%, transparent);
+        border-radius: 10px;
+        transition: background 0.3s ease;
+      }
+
+    
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--secondary);
+      }
+
+
+      * {
+        scrollbar-width: thin !important;
+        scrollbar-color: color-mix(in srgb, var(--secondary) 60%, transparent) transparent !important;
+      }
+
+      body {
+        font-family: var(--system-font), sans-serif;
+        font-weight: 600;
+      }
+      #invoice {
+        font-family: var(--invoice-font), sans-serif; 
+      }
+      @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+    </style>
+    
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: "var(--primary)",
+            brown: "var(--secondary)",
+            accent: "var(--accent)",
+            ligth: "var(--background)",
+          },
+        },
+      },
+    };
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
