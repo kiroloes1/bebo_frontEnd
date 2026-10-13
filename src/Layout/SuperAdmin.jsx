@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Sidebar from "../pages/sideBar"
 import BackupButton from "../pages/backup/backup"
+import AiChat from "../pages/aiChatbot/aiChat"
 
 export default function SuperAdminLayout() {
   return (
@@ -12,6 +13,8 @@ export default function SuperAdminLayout() {
       <div className="content flex-1">
         <Outlet />
       </div>
+
+      <AiChat />
 
              
 
